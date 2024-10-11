@@ -1,4 +1,4 @@
-for _, name in ipairs({ "curl", "grep", "rg", "ln" }) do
+for _, name in ipairs({ "curl", "grep", "rg" }) do
   if vim.fn.executable(name) == 0 then
     return vim.notify(name .. " is not installed, run :checkhealth parrot", vim.log.levels.ERROR)
   end
